@@ -61,17 +61,33 @@ class _LoginScreenState extends State<LoginScreen> {
                 alignment: Alignment.center,
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 decoration: const ShapeDecoration(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(
-                  Radius.circular(4),
-                ),
-                ),
-                color: blueColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(4),
+                    ),
+                  ),
+                  color: blueColor,
                 ),
               ),
               const SizedBox(height: 12),
               Flexible(child: Container(), flex: 3),
               //transitioning to signup screen
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    child: const Text('Don\'t have an account?'),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                  ),
+                  Container(
+                    child: const Text(
+                      'Sign up',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
