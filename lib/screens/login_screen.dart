@@ -70,6 +70,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 color: blueColor,
                 ),
               ),
+              const SizedBox(height: 12),
+              Flexible(child: Container(), flex: 3),
               //transitioning to signup screen
             ],
           ),
